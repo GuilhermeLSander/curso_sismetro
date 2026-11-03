@@ -4,6 +4,7 @@ alunos = [
     {'nome' : 'Arthur', 'notas' : [7, 9], 'idade' : 16, 'faltas': 40},
     {'nome' : 'Guilherme', 'notas' : [9, 10], 'idade' : 16, 'faltas': 2},
     {'nome' : 'Jessica', 'notas' : [8, 8], 'idade' : 16, 'faltas': 120},
+    {'nome' : 'Menina', 'notas' : [8, 6], 'idade' : 16, 'faltas': 290},
     {'nome' : 'Ezequiel', 'notas' : [6, 7], 'idade' : 16, 'faltas': 54},
     {'nome' : 'Rafael', 'notas' : [4, 10], 'idade' : 16, 'faltas': 444},
     {'nome' : 'Eduardo', 'notas' : [2, 7], 'idade' : 16, 'faltas': 54},
@@ -47,6 +48,6 @@ print("Aprovados")
 for aluno in aprovados:
     print(f"  {aluno}")
 
-print("Reprovado")
+print("Reprovados")
 for aluno in reprovados:
     print(f"  {aluno}")
