@@ -36,6 +36,7 @@ for aluno in alunos:
     nota = calcular_media(soma, qtde_notas)
     status = status_aprovacao(nota, aluno['faltas'])
     dados_aluno = aluno['nome']
+    print("")
 
     nota = calcular_media(soma, qtde_notas)
     print(f"Aluno: {aluno['nome']}, Nota: {nota}, Status: {status_aprovacao(nota, aluno['faltas'])}, Faltas: {status_presenca(aluno['faltas'])}")
