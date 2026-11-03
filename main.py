@@ -4,11 +4,9 @@ alunos = [
     {'nome' : 'Arthur', 'notas' : [7, 9], 'idade' : 16, 'faltas': 40},
     {'nome' : 'Guilherme', 'notas' : [9, 10], 'idade' : 16, 'faltas': 2},
     {'nome' : 'Jessica', 'notas' : [8, 8], 'idade' : 16, 'faltas': 120},
-    {'nome' : 'Menina', 'notas' : [8, 6], 'idade' : 16, 'faltas': 290},
     {'nome' : 'Ezequiel', 'notas' : [6, 7], 'idade' : 16, 'faltas': 54},
     {'nome' : 'Rafael', 'notas' : [4, 10], 'idade' : 16, 'faltas': 444},
     {'nome' : 'Eduardo', 'notas' : [2, 7], 'idade' : 16, 'faltas': 54},
-    
     ]
 
 def calcular_media(soma, qtde):
@@ -36,7 +34,6 @@ for aluno in alunos:
     nota = calcular_media(soma, qtde_notas)
     status = status_aprovacao(nota, aluno['faltas'])
     dados_aluno = aluno['nome']
-    print("")
 
     nota = calcular_media(soma, qtde_notas)
     print(f"Aluno: {aluno['nome']}, Nota: {nota}, Status: {status_aprovacao(nota, aluno['faltas'])}, Faltas: {status_presenca(aluno['faltas'])}")
@@ -46,11 +43,10 @@ for aluno in alunos:
     else:
         reprovados.append(dados_aluno)
 
-
 print("Aprovados")
 for aluno in aprovados:
     print(f"  {aluno}")
 
-print("Reprovadod")
+print("Reprovado")
 for aluno in reprovados:
     print(f"  {aluno}")
